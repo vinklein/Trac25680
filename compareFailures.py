@@ -19,16 +19,12 @@ def process_lines(lines):
 
 
 if __name__ == "__main__":
-    import os
-    print(os.getcwd())
-
     with open(file_a, 'r') as file:
         lines_a = file.readlines()
 
     with open(file_b, 'r') as file:
         lines_b = file.readlines()
 
-    print(len(lines_a))
     ids_a = process_lines(lines_a)
     ids_b = process_lines(lines_b)
 
